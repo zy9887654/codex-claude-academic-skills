@@ -1,0 +1,4 @@
+interface:
+  display_name: "SCI图表分析方法"
+  short_description: "按数据证据、竞争效应与参数边界深入撰写SCI图表讨论"
+  default_prompt: "使用 $sci-figure-analysis 检查并重写论文中的图表描述和分析。"
