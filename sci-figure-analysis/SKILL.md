@@ -1,6 +1,6 @@
 ---
 name: sci-figure-analysis
-description: Review and rewrite figure and table descriptions in scientific manuscripts so every visual is introduced before placement, every panel is covered, observations precede interpretation, and the discussion develops quantitative mechanisms and limits. Use for SCI论文图表描述、结果与讨论深化、多子图分析及图文顺序核查。
+description: Review and rewrite figure and table descriptions in scientific manuscripts so every visual is introduced before placement, every panel is covered, observations precede interpretation, related panels are interleaved as evidence, and the discussion develops quantitative mechanisms and limits. Use for SCI论文图表描述、结果与讨论深化、多子图交叉论证及图文顺序核查。
 ---
 
 # SCI图表分析方法
@@ -12,8 +12,8 @@ description: Review and rewrite figure and table descriptions in scientific manu
 对每一幅图按以下顺序组织正文：
 
 1. 在正文中首次写出“图N”或“Fig. N”，说明整幅图展示的对象、控制条件、比较维度和指标。
-2. 描述数据和可直接观察的关键信息。复合图必须逐一覆盖每个子图 `(a)–(n)`，说明横纵坐标、固定条件、变化方向、峰值、转折、范围、离散度或异常点。
-3. 在数据描述之后分析规律。解释变量如何影响过程、不同效应的方向和相对强弱、主导约束及适用边界。
+2. 描述数据和可直接观察的关键信息。复合图必须覆盖每个子图 `(a)–(n)`，说明横纵坐标、固定条件、变化方向、峰值、转折、范围、离散度或异常点，但不要求按编号把所有子图依次写完后再统一分析。
+3. 以主要现象为论证单元，在描述目标子图后立即分析，并就地穿插其他子图中能支持或限制该解释的数据。解释变量如何影响过程、不同效应的方向和相对强弱、主导约束及适用边界。
 4. 完成上述正文后再放置图件；图注紧随图件。
 
 表格采用同一原则：先在正文出现“表N”，介绍表的内容并描述关键数值，再分析其含义，最后放置表格。
@@ -37,14 +37,27 @@ description: Review and rewrite figure and table descriptions in scientific manu
 - 区分相关性、机理线索和已验证因果。只有现有数据能排除主要替代解释时才使用确定性因果表述。
 - 说明结论成立的控制条件和参数范围，避免把局部截面推广为全参数空间规律。
 
+## 跨子图证据穿插
+
+复合图的正文结构服从论证链，而不是子图编号。一个主要规律应按“目标子图的观察—待解释问题—相关子图证据—机理判断—结论边界”连续展开。
+
+- 描述目标子图的关键数据后立即开始讨论，不要等全部子图描述完毕才集中分析。
+- 当其他子图提供转化率、停留时间、流量、热输入或组分等论据时，在当前讨论段中直接引用这些子图及其必要数据，说明证据支持哪一步推理。
+- 将同一子图用于多个论证时，每次只调用与当前问题有关的数据；后文介绍该子图时避免重复已经完成的描述和分析。
+- 对存在竞争作用的区间，分别建立各作用路径，并为每条路径匹配相应子图证据，再比较方向、强弱和主导范围。
+- 趋势相对独立、不能解释其他子图的结果可另成一个“描述—分析”单元，不为保持 `(a)–(d)` 顺序而强行穿插。
+
+例如，温度子图显示贫燃区升温时，可在该段立即引用转化率和停留时间子图，判断升温是否来自反应完成度提高，而不是化学能输入增加；讨论富燃区时，可进一步调用流量、转化率或停留时间子图，为方向相反的作用路径分别提供证据。若另一子图呈现独立且稳定的趋势，则单独描述和分析。
+
 ## 复合图写作模板
 
 按内容调整段落数量，不机械套句：
 
 1. `图N展示……，其中(a)……，(b)……，(c)……，(d)……。`
-2. 依次描述各子图的主要数据和关键数值。
-3. 综合子图证据，分析主导机制、竞争效应、转折原因和参数边界。
-4. 插入图N及图注。
+2. 描述承担主要结论的目标子图及其关键数值，随即提出需要解释的规律。
+3. 在同一讨论单元中穿插相关子图的数据，建立证据链并分析主导机制、竞争效应、转折原因和参数边界。
+4. 对独立子图另起“描述—分析”单元；确认所有子图均已覆盖且无不必要重复。
+5. 插入图N及图注。
 
 ## 删除的内容
 
@@ -55,6 +68,7 @@ description: Review and rewrite figure and table descriptions in scientific manu
 - 正文中的“图N/表N”首次出现早于对应图表。
 - 图表放在完整的正文描述和分析之后。
 - 每个子图都在正文中被明确描述。
+- 每个主要规律在描述后立即得到讨论；相关子图证据已在该讨论中就地引用，而不是因编号顺序被推迟。
 - 关键结论前有可核对的数值或趋势证据。
 - 分析说明了效应路径、方向、相对强弱和主导区间。
 - 局部规律注明固定条件，统计范围和参与数量明确。
